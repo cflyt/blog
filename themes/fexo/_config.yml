@@ -9,6 +9,8 @@ avatar: /images/avatar.jpg
 # Set favicon
 favicon: /favicon.ico
 
+post_asset_folder: true
+
 # For seo
 keywords: Hexo主题,服务端,分布式,高并发,网站,C++,JAVA,PYTHON
 
