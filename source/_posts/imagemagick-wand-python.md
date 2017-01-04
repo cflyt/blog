@@ -71,7 +71,7 @@ im.crop(left=offset_x, top=offest_y, width=crop_width, height=crop_height, gravi
 ```
 gravity指图片的9宫格的方位，分别有（'north_west', 'north', 'north_east', 'west', 'center', 'east', 'south_west', 'south', 'south_east'），如果设置这个值，那么起点坐标会重新设置。每个区域的的坐标起点会有所不同，可以看这里[gravity](http://blog.csdn.net/pzw_0612/article/details/52296910)。
 
-### sample/resize
+## sample/resize
 wand对动态GIF支持缩放，对所有的帧都生效。
 
 ```
@@ -90,7 +90,7 @@ resize还可以带模糊功能，对整个GIF有效。
 
 
 
-### 贴水印
+## 贴水印
 除了裁剪，缩放，其他对动态GIF的操作都必须一帧帧处理，然后再合成。
 wand提供sequence，保存解析出来的图片帧。
 
@@ -122,7 +122,7 @@ with Image(filename='test.gif') as oriImg, \
 下面看效果，贴一个coco的图片：
 ![](watermark.gif)
 
-### 贴文字
+## 贴文字
 
 使用caption函数
 
