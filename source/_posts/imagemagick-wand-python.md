@@ -101,7 +101,7 @@ watermark(image, transparency, left, top)
 ```
 from wand.image import Image
 
-position = (100, 50)
+position = (0, 0)
 opacity = 0.1
 with Image(filename='test.gif') as oriImg, \
         Image(filename='mark.png') as mark:
@@ -118,6 +118,9 @@ with Image(filename='test.gif') as oriImg, \
 * 需要使用index_context打开进行帧修改，然后close（这里用with）才生效； 如果用 `for frame in oriImg:` 需要append到一个新的Image容器修改才生效。
 * 有些动态GIF不是每一帧大小都一样的，偏移背景的位置也不一样，wand中把这种信息保存在page中，page为四元组，（width, height, left, top）。贴水印的时候要注意转移坐标。
 * 每打开一个Image，都需要close，否则有内存泄露。
+
+下面看效果，贴一个coco的图片：
+![](watermark.gif)
 
 ### 贴文字
 
@@ -175,6 +178,9 @@ caption函数设计直接传人text，但是我们其实不知道text占用多�
 3. 使用font放置的位置；
 4. 使用caption函数。
 
+下面看效果， **仗剑天涯** 文字：
+
+![](textmark.gif)
 
 
 
