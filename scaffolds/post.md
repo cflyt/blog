@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: 视觉
+tags: 技术
 categories: 未分类
 type:
 ---
