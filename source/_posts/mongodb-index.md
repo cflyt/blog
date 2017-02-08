@@ -1,6 +1,6 @@
 ---
 title: Mongdb：索引优化和工具
-tags: 技术
+tags: mongodb
 categories: 未分类
 date: 2017-02-06 23:03:46
 type:

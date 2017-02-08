@@ -20,9 +20,9 @@ permalink_defaults:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tag
+tag_dir: tags
 archive_dir: archives
-category_dir: category
+category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -40,14 +40,22 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
-  auto_detect: false
+  line_number: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
+
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

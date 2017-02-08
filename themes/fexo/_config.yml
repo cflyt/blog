@@ -22,7 +22,7 @@ home_nav:
     url: /project/
     target_blank: true #在新页面打开
   - name: Github
-    url: https://github.com/forsigner
+    url: https://github.com/fengjianque
     target_blank: true
 
 # config page nav
@@ -159,9 +159,9 @@ link:
 
 project:
   - type: personal
-    name: fexo
+    name: 三国
     url:
-    intro: A minimalist design theme for hexo
+    intro:  煮酒论英雄
   - type: company
     name: Fexo
     url:
